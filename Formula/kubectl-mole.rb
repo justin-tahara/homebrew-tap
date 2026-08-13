@@ -7,26 +7,26 @@
 class KubectlMole < Formula
   desc "Watch Kubernetes workloads until they settle, then explain what broke"
   homepage "https://github.com/justin-tahara/kubectl-mole"
-  version "0.3.0"
+  version "0.4.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/justin-tahara/kubectl-mole/releases/download/v#{version}/kubectl-mole_v#{version}_darwin_arm64.tar.gz"
-      sha256 "e4bb87b5d2960cebd2eb30bad9239946bacdb5f25bce60eb7937098994ea1741"
+      sha256 "8486506f4437bcbfca9c4006c65c86218f2748f90b6006dc1737aab82dfdec4b"
     else
       url "https://github.com/justin-tahara/kubectl-mole/releases/download/v#{version}/kubectl-mole_v#{version}_darwin_amd64.tar.gz"
-      sha256 "1e45a8cc87e049bcdaa4e50c4790153207c2d729f4627ac137b722f0e78e1b2c"
+      sha256 "3fa7216b878f90456836cf5ad3834da4cd1f08ee8f46d3c511c2567630ac818d"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/justin-tahara/kubectl-mole/releases/download/v#{version}/kubectl-mole_v#{version}_linux_arm64.tar.gz"
-      sha256 "ed9914014ef7c2ec37cf70a64de79f3dd7e6def734886f1773eb9ecd44a9ca8b"
+      sha256 "8ad4f2f39c7f2a55f10e769b0534da10aff254569b06d5638dbfadcca5b18581"
     else
       url "https://github.com/justin-tahara/kubectl-mole/releases/download/v#{version}/kubectl-mole_v#{version}_linux_amd64.tar.gz"
-      sha256 "888266bf04d0b782e2a02e27bbf03f1244987962906ac5e1a5c6f16ebb2a4c29"
+      sha256 "91bb2d3591ed176036f40975cb4c40c054ac98bc0eb5a43514a1201073630d51"
     end
   end
 
